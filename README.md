@@ -9,3 +9,5 @@ A simple script to show color value in current shell.
 ### * xfdown
 
 QQ XuanFeng download tool, work with aria2. Dependency: Python 2.6+, Aria2, Python 2 urwid module. Execute xfdown/xfdown.py to start.
+
+Project source: https://github.com/kikyous/xfdown
