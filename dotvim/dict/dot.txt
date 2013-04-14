@@ -1,0 +1,10 @@
+subgraph
+diamond
+style
+label
+box
+shape
+circle
+ellipse
+plaintext
+triangle

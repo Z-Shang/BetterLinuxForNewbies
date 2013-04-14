@@ -1,0 +1,15 @@
+parentsUntil
+mousemove
+scrollTop
+removeClass
+mouseover
+mouseout
+removeData
+getJSON
+addClass
+prependTo
+insertAfter
+prepend
+appendTo
+closest
+outerWidth
