@@ -1,0 +1,59 @@
+syn on                      "语法支持
+
+"common conf {{             通用配置
+set si                      "自动缩进
+set bs=2                    "在insert模式下用退格键删除
+set showmatch               "代码匹配
+set laststatus=2            "总是显示状态行
+set expandtab               "以下三个配置配合使用，设置tab和缩进空格数
+set shiftwidth=4
+set tabstop=4
+set cursorline              "为光标所在行加下划线
+set number                  "显示行号
+set mouse=a
+set autoread                "文件在Vim之外修改过，自动重新读入
+set ignorecase              "检索时忽略大小写
+set fileencodings=uft-8     "使用utf-8打开文件
+set hls                     "检索时高亮显示匹配项
+set helplang=cn             "帮助系统设置为中文
+set foldenable
+set foldmethod=syntax       "代码折叠
+"}}
+
+filetype indent on
+
+"conf for plugins {{ 插件相关的配置
+"状态栏的配置 
+"powerline{
+set guifont=PowerlineSymbols\ for\ Powerline
+set nocompatible
+set t_Co=256
+let g:Powerline_symbols = 'fancy'
+"}
+"pathogen是Vim用来管理插件的插件
+"pathogen{
+"call pathogen#infect()
+"}
+
+"}}
+
+set vb t_vb=
+
+set incsearch   "在输入要搜索的文字时，vim会实时匹配
+
+
+colorscheme neon
+
+" Use neocomplcache. 
+let g:neocomplcache_enable_at_startup = 1 
+" Use smartcase. 
+let g:neocomplcache_enable_smart_case = 1 
+" Use camel case completion. 
+let g:neocomplcache_enable_camel_case_completion = 1 
+" Enable omni completion. 
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS 
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags 
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS 
+autocmd FileType python setlocal omnifunc=pythoncomplete#Complete 
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags 
+
