@@ -1,3 +1,4 @@
-** Emacs **
+Emacs Config Files
+==================
 
-Configuration files for emacs
+We need someone to save the emacs church.
