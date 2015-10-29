@@ -1,3 +1,4 @@
-** Tmux **
+Tmux Config
+===========
 
-Configuration files for tmux
+Nothing yet.

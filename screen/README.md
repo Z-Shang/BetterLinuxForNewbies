@@ -1,3 +1,4 @@
-** Screen **
+GNU Screen Config
+=================
 
-Configuration files for GNU Screen
+Nothing so far.

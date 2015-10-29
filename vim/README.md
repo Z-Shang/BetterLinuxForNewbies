@@ -1,13 +1,26 @@
-### * VIM Configuration Files
+Vim configuration files
+=======================
 
----
-**Usage:**
-Copy everything in the vim files directory **WITHOUT** the vimrc files to ~/.vim/
-Rename the vimrc file you want to use to .vimrc and put in your home directory
+To use, `cd` into the provider you like and run:
 
-**Content:**
+```sh
+[ -d ~/.vim ] && mv ~/.vim ~/.vim.bak."$(date -u +%s)"
+mv ~/.vimrc ~/.vimrc.bak."$(date -u +%s)"
+mkdir -p ~/.vim
+for vimfile in *; do
+	case "$vimfile" in
+		vimrc|*.md)	continue;;
+	esac
+	cp -a -- "$vimfile" ~/.vim
+done
+mv "vimrc" ~/.vimrc
+```
 
----
-### * vim_files_by_phoenixizx
+File description
+----------------
 
-lilydjwg's vim configuration, original .vimrc is dotvim/vimrc.lilydjwg. A simpler(or less function for vim newbies) one is dotvim/vimrc.phoenixlzx, move the vimrc file you want to use to $HOME/.vimrc, and rename dotvim folder to .vim under your $HOME directory. Need ctags, cscope and vim-neocomplcache installed.
+The `lilydjwg` dir contains her own `vimrc`. The `phoenixlzx` version contains
+his own.
+
+The `lily_vimrc.phoenixlzx` is a stripped-down version of lilydjwg's vimrc, and
+it depends on ctags, cscope and vim-neocomplcache.

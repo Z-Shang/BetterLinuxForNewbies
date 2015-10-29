@@ -1,7 +1,13 @@
-** Zsh **
+zsh
+===
 
-Configuration files for zshell
+Configuration files for the Z Shell.
 
-** Usage:**
+To install, just run:
 
-Rename the zshrc file to .zshrc and put in your home directory
+```sh
+mv ~/.zshrc ~/.zshrc.bak."$(date -u +%s)"
+cp -a zshrc ~/.zshrc
+```
+
+This puts the `zshrc` file right into your `~` as `.zshrc`.

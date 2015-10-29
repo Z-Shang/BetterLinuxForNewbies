@@ -1,4 +1,7 @@
-### * Misc Tools
+Misc tools
+==========
 
-**Usage**
-Read the readme file of every tool
+This README may require you to read the folders' READMEs recurively.
+
+* xfdown: A QQ XuanFeng download tool written in Python. Uses aria2.
+* shcolor: Shows you how ANSI Escape colors look like in your terminal.
