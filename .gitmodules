@@ -1,0 +1,9 @@
+[submodule "vim/lilydjwg"]
+	path = vim/lilydjwg
+	url = https://github.com/lilydjwg/dotvim
+[submodule "vim/phoenixlzx"]
+	path = vim/phoenixlzx
+	url = https://github.com/phoenixlzx/dotvim
+[submodule "misc/xfdown"]
+	path = misc/xfdown
+	url = https://github.com/kikyous/xfdown
